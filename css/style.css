@@ -8582,6 +8582,7 @@ html:not(.scrolled) .header-arrow {
     inset-inline: 0;
     z-index: 60;
     inline-size: 100%;
+    block-size: calc(100% - 40px);
     background-color: #fff;
     border-start-start-radius: 20px;
     border-start-end-radius: 20px;
@@ -8589,7 +8590,8 @@ html:not(.scrolled) .header-arrow {
     transition-property: opacity, visibility, transform;
     transition-property: opacity, visibility, transform, -webkit-transform;
     transition-duration: 0.3s;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .catalog-aside:not(.show) {
@@ -8620,12 +8622,8 @@ html:not(.scrolled) .header-arrow {
   }
 
   .catalog-filter-form {
-    block-size: calc(100vh - 40px);
-    block-size: calc(100svh - 40px);
     padding-block: 0 54px;
     padding-inline: var(--container-padding-inline);
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 
   .catalog-inner__subcategories {
