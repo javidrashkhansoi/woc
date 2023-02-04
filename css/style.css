@@ -8332,7 +8332,7 @@ html:not(.scrolled) .header-arrow {
     display: flex;
     flex-direction: column;
     max-inline-size: 768px;
-    block-size: calc(100vh - var(--header-wrapper-block-size));
+    block-size: calc(100% - var(--header-wrapper-block-size));
     background-color: #fff;
     box-shadow: 3px 0 4px rgba(168, 168, 168, 0.25);
     transition-property: all;
@@ -8522,7 +8522,8 @@ html:not(.scrolled) .header-arrow {
     position: absolute;
     inset-block-start: calc(100% - 1px);
     inset-inline: 0;
-    block-size: calc(100vh - var(--stores-preview-bottom-position));
+    max-block-size: calc(100vh - var(--stores-preview-bottom-position));
+    max-block-size: calc(100svh - var(--stores-preview-bottom-position));
     z-index: 5;
     inline-size: max(290px, 90.625%);
     transition-property: all;
@@ -8620,6 +8621,7 @@ html:not(.scrolled) .header-arrow {
 
   .catalog-filter-form {
     block-size: calc(100vh - 40px);
+    block-size: calc(100svh - 40px);
     padding-block: 0 54px;
     padding-inline: var(--container-padding-inline);
     overflow-x: hidden;
