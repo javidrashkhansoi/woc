@@ -8616,7 +8616,7 @@ html:not(.scrolled) .header-arrow {
   }
 
   .catalog-sort-form__select .choices__list--single {
-    flex: 0 0 102px;
+    flex: 0 1 102px;
     white-space: nowrap;
     overflow: hidden;
   }
